@@ -67,8 +67,7 @@ if __name__=="__main__":
         caption, filteredImages = get_recommendation(usr_input)
         
         cols = cycle(st.columns(5)) 
-        #for idx, filteredImage in enumerate(filteredImages):
-        #    next(cols).image(filteredImage, width=150, caption=caption[idx])
+        
         i=0
         for idx, filteredImage in enumerate(filteredImages):
             img_name = 'img'+str(i)+'.jpg'
