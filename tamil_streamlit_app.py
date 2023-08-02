@@ -50,7 +50,7 @@ def get_recommendation(movie):
 
 if __name__=="__main__":
 
-    st.title("I am your :red[Tamil] :blue[Movie] :red[Recommender]  :sunglasses:")
+    st.title("I am your :red[தமிழ்] :blue[Movie] :red[Recommender]  :sunglasses:")
     
     footer()
     tml_df = pd.read_csv("cleansed_tamil_mv_data.csv")
