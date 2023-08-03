@@ -56,7 +56,7 @@ if __name__=="__main__":
     tml_df = pd.read_csv("cleansed_tamil_mv_data.csv")
     
     usr_input = st.selectbox(
-    'Select a movie you like:', tml_df['Title'].values.tolist())
+    'Select a movie you like:', sorted(tml_df['Title'].values.tolist()) )
      
     cos_sim1 = pickle.load(open("cosine_sim1.pkl", 'rb'))
     cos_sim2 = pickle.load(open("cosine_sim2.pkl", 'rb'))
